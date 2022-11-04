@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form action="ml" method="post">
+    <h1>지연마켓 회원가입 폼</h1>
+    <fieldset style='width:500px;margin:5px'>
+        <legend> 개인 정보 입력</legend>
+        First name:
+        <input type="text" name="firstname"><br>
+        Last name:
+        <input type="text" name="lastname" list="namelist"><br>
+        email:
+        <input type="text" name="email">@<input type="text" name="email2" list="maillist"><br>
+
+        Phone number:
+        <input style='width:35px' type="text" name="phone1" list="phonelist" >-<input style='width:35px' type="text" name="phone2">-<input style='width:35px' type="text" name="phone3"><br>
+
+
+        Gender: <input type="radio" id="Female" name="gender" value="Female" checked>
+        <label for="Female">F</label>
+        <input type="radio" id="Male" name="gender" value="Male">
+        <label for="Male">M</label><br>
+
+
+        My hobby:
+        <input type="checkbox" name="sports" value="sports_yes">
+        sports
+        <input type="checkbox" name="reading" value="reading_yes">
+        reading
+        <input type="checkbox" name="drawing" value="drawing_yes">
+        drawing<br>
+        When is your birthday?
+        <input type="date" name="birthday" max="2022-10-13"><br>
+        Bio:<br>
+        <textarea id="bio" name="bio" rows="5" cols="33">
+        </textarea>
+        <dataList id="namelist">
+            <option value="Kim"></option>
+            <option value="Lee"></option>
+            <option value="Ryu"></option>
+            <option value="Park"></option>
+        </dataList>
+        <dataList id="phonelist">
+            <option value="010"></option>
+            <option value="031"></option>
+            <option value="054"></option>
+        </dataList>
+        <dataList id="maillist">
+            <option value="gmail.com"></option>
+            <option value="handong.edu"></option>
+            <option value="handong.ac.kr"></option>
+            <option value="naver.com"></option>
+        </dataList>
+
+    </fieldset>
+    <fieldset style='width:550px;margin:5px'>
+        <legend>Just for Fun</legend>
+        What's your favorite color? <input type="color" name="color"><br>
+        What's your favorite food?
+        <select name="foods" id="food_select">
+            <option value="">Please choose at least one</option>
+
+            <optgroup label="pizza">
+                <option value="potato pizza">Potato Pizza</option>
+                <option value="bacon pizza">Bacon Pizza</option>
+                <option value="cheese pizza">Cheese Pizza</option>
+            </optgroup>
+            <optgroup label="sushi">
+                <option value="tuna">Tuna</option>
+                <option value="salmon">Salmon</option>
+            </optgroup>
+
+        </select>
+    </fieldset>
+    <input type="submit" value="제출">
+    <input type="reset" value="취소">
+</form>
+
+</body>
+</html>
